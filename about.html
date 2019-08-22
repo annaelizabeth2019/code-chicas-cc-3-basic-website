@@ -8,39 +8,50 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    /> -->
-    <!-- // The Bootstrap CDN must come before the local CSS stylesheet -->
+    />
     <link rel="stylesheet" href="./style/main.css" />
     <script defer src="./javascript/main.js"></script>
     <!-- // be sure to include defer so the JS loads last -->
     <title>About Me</title>
   </head>
   <body>
-    <a href="/index.html">Home</a> | <a href="/about.html">About Me</a> |
-    <a href="/fanpage.html">Sonia Maria Sotomayor Fan Page</a> |
-    <a href="/tictactoe.html">Tic-Tac-Toe</a>
+    <nav>
+      <a href="/index.html">Home</a> | <a href="/about.html">About Me</a> |
+      <a href="/fanpage.html">Sonia Maria Sotomayor Fan Page</a> |
+      <a href="/game.html">Tic-Tac-Toe</a>
+    </nav>
     <h1>About Me!</h1>
-    <div class="toggle">
-      <button onclick="toggleButton()">My Name</button>
-      <p id="toggle-text">Anna Elizabeth Peterson</p>
-    </div>
-    <div class="toggle">
-      <button onclick="toggleButton()">My School</button>
-      <p id="toggle-text">University of Utah</p>
-    </div>
-    <button onclick="toggleButton()">My Career</button>
-    <p id="toggle">
-      I have worked as a comedian, educator, and full stack programmer
-    </p>
-    <button onclick="toggleButton()">My Hobbies</button>
-    <p id="toggle">
-      My hobbies include hula hooping, stand up comedy, and reading. I love
-      books about strong women and history.
-    </p>
+    <h2>
+      I like sunshine! To learn other cool info about me, try clicking the
+      buttons below!
+    </h2>
+    <main>
+      <div>
+        <button onclick="toggleButton(event)">My Name</button>
+        <p style="display: none">Anna Elizabeth Peterson</p>
+      </div>
+      <div>
+        <button onclick="toggleButton(event)">My School</button>
+        <p style="display: none">University of Utah</p>
+      </div>
+      <div>
+        <button onclick="toggleButton(event)">My Career</button>
+        <p style="display: none">
+          I have worked as a comedian, educator, and full stack programmer
+        </p>
+      </div>
+      <div>
+        <button onclick="toggleButton(event)">My Hobbies</button>
+        <p style="display: none">
+          My hobbies include hula hooping, stand up comedy, and reading. I love
+          books about strong women and history.
+        </p>
+      </div>
+    </main>
   </body>
 </html>
