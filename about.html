@@ -21,7 +21,8 @@
   </head>
   <body>
     <nav>
-      <a href="/index.html">Home</a> | <a href="/about.html">About Me</a> |
+      <a href="/index.html">Home</a> |
+      <b><a href="/about.html">About Me</a></b> |
       <a href="/fanpage.html">Sonia Maria Sotomayor Fan Page</a> |
       <a href="/game.html">Tic-Tac-Toe</a>
     </nav>
@@ -31,22 +32,23 @@
       buttons below!
     </h2>
     <main>
+      <button onclick="toggleButton(event)">BUTTON</button>
       <div>
-        <button onclick="toggleButton(event)">My Name</button>
+        <button id="btn">My Name</button>
         <p style="display: none">Anna Elizabeth Peterson</p>
       </div>
       <div>
-        <button onclick="toggleButton(event)">My School</button>
+        <button id="btn">My School</button>
         <p style="display: none">University of Utah</p>
       </div>
       <div>
-        <button onclick="toggleButton(event)">My Career</button>
+        <button id="btn">My Career</button>
         <p style="display: none">
           I have worked as a comedian, educator, and full stack programmer
         </p>
       </div>
       <div>
-        <button onclick="toggleButton(event)">My Hobbies</button>
+        <button id="btn">My Hobbies</button>
         <p style="display: none">
           My hobbies include hula hooping, stand up comedy, and reading. I love
           books about strong women and history.
