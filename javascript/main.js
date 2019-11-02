@@ -1,26 +1,28 @@
 // Write a toggle function for a child of the selected element!!!
-const scope = "Higher scope";
-function toggleButton(event) {
-  const text = event.target.parentNode.children[1];
 
-  if (text.style.display === "none") {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none";
+// ----- constants -----
+const buttons = document.getElementsByClassName("buttons");
+const button = document.getElementById("my-button");
+
+// ----- event listeners ------
+
+button.addEventListener("click", toggleButton);
+
+//----- functions -----
+
+// an arrow function with ES6
+function init() {
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", toggleButton);
   }
 }
 
-button = document.getElementById("myEvent");
-button.onclick = event => {
-  console.log("onclick");
-};
-button.onclick = event => {
-  console.log("onclick 2");
-};
+function toggleButton(event) {
+  if (event.target.parentNode.children[1].style.display === "none") {
+    event.target.parentNode.children[1].style.display = "";
+  } else {
+    event.target.parentNode.children[1].style.display = "none";
+  }
+}
 
-button.addEventListener("click", event => {
-  console.log("addEventListener", event);
-});
-button.addEventListener("click", event => {
-  console.log("addEventListener 2");
-});
+init();

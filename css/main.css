@@ -1,3 +1,8 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,6 +24,9 @@ h6 {
 
 h1 {
   font-size: 100px;
+  border: 5px white solid;
+  padding: 20px;
+  margin: 10px;
 }
 
 main {
@@ -30,15 +38,7 @@ main {
 button {
   padding: 0px 20px;
   font-size: 18px;
-  background: white;
-  cursor: pointer;
   margin: 15px;
-  outline: 2px solid black;
-}
-
-button:hover {
-  color: white;
-  background-color: black;
 }
 
 nav {
@@ -50,6 +50,21 @@ nav {
 a {
   color: white;
   text-decoration: none;
+}
+
+.white-text {
+  color: white;
+}
+
+.yellow-text {
+  color: rgb(253, 192, 47);
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .padded {
